@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>积分排名</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta name="keywords" content="浙江电信,党政"/>
+	<meta name="description" content=""/>
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" href="./css/iconfont/iconfont.css">
+</head>
+<body>
+	<!--正文部分-->
+	<div class="la-content">
+		<a class="la-list-content la-list-arrow la-news la-news-img" href="#">
+			<img src="../images/news.jpg" alt="sp" />
+			<h2>足球(可以兑换的商品)</h2>
+			<span class="la-news-coll la-pointconvert-span">1880积分</span>
+			<span class="la-list-time la-pointconvert-btn">兑换</span>
+		</a>
+	</div>
+	<div class="la-myinfo-modal" style="display:none;z-index:10;">
+		<div class="la-modal-box la-pointconvert-modal">
+			<p>请填写您的信息</p>
+			<input type="text" class="js-text-value" placeholder="姓名"/>
+			<input type="text" class="js-text-value" placeholder="手机号"/>
+			<textarea rows="2" cols="" maxlength="120" placeholder="寄送地址"></textarea>
+			<button type="button" class="la-btn la-btn-red js-submit">确认修改</button>
+			<button type="button" class="la-btn js-close">关闭</button>
+		</div>
+	</div>	
+<script src="./js/jquery-3.1.1.min.js"></script>
+<script src="./js/common.js"></script>
+<script>
+	$(".la-pointconvert-btn").click(function(){
+		$(".la-myinfo-modal").show();
+
+	});
+	$(".js-close").click(function(){
+		$(".la-myinfo-modal").hide();
+	});
+
+</script>
+</body>
+</html>
